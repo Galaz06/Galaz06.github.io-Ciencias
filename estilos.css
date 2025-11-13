@@ -1,0 +1,152 @@
+
+:root {
+    --primary: #241b4b;
+    --secondary: #f5f6ff;
+    --primary2: #06042D;
+    --secondary2: #06042D0A;
+    --headerHeight: 8rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f6ff;
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.header {
+    background-color: var(--primary);
+    height: var(--headerHeight);
+}
+
+.barraNavegacion {
+    height: 100%;
+    width: 100%;
+    padding:  0 3rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 5rem;
+    color: var(--secondary);
+}
+
+.menu .li {
+    list-style: none;
+
+}
+
+.menu .link {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 5rem;
+    font-weight: 450;
+}
+
+.menu {
+    background-color: var(--primary);
+    margin: 0 -3rem;
+    width: 100%;
+    position: absolute;
+    height: calc(100vh - var(--headerHeight));
+    top: var(--headerHeight);
+    transform: translateX(105%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    transition: 0.3s;
+}
+
+#menuToggle:checked ~ .menu{
+    transform: translateX(0);
+}
+
+#menuToggle:checked ~ .menuHamburguesa > .iconoMenu {
+    display: none;
+}
+
+#menuToggle:checked ~ .menuHamburguesa > .iconoOcultar i {
+    animation: girar 0.5s;
+    display: block;
+}
+
+.iconoMenu i {
+    animation: girar 0.5s;
+    font-size: 5rem;
+    color: var(--secondary);
+}
+
+.iconoMenu {
+    animation: girar 0.5s;
+}
+
+.iconoOcultar i {
+    display: none;
+    font-size: 5rem;
+    color: var(--secondary);
+}
+
+#menuToggle {
+    display: none;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Media query navbar*/
+@media (min-width: 768px) {
+    .iconoMenu {
+        display: none;
+    }
+
+    .iconoOcultar {
+        display: none;
+    }
+
+    .menu .link {
+        all: unset;
+        font-size: 2rem;
+        color: var(--secondary);
+    }
+
+    .menu {
+        all: unset;
+        display: flex;
+        gap: 5rem;
+    }
+}
+
+@media (max-height: 450px) {
+    .menu {
+        gap: 6.5rem;
+        height: 110vh;
+    }
+
+}
