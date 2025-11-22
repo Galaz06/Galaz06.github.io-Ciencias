@@ -1,34 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Matias Galaz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efectos del uso execivo de pantallas</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Pinyon+Script&family=Titan+One&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="barraNavegacion">
-            <h1 class="logo">Logo</h1>
-            <input type="checkbox" id="menuToggle">
-            <label for="menuToggle" class="menuHamburguesa">
-                <div class="iconoMenu">
-                    <i class="bi bi-list"></i>
-                </div>
-                <div class="iconoOcultar">
-                    <i class="bi bi-x"></i>
-                </div>
-            </label>
-            <ul class="menu">
-                <li class="li"><a href="#" class="link">Inicio</a></li>
-                <li class="li"><a href="#" class="link">Noticias</a></li>
-                <li class="li"><a href="#" class="link">Contactanos</a></li>
+    <script src="https://kit.fontawesome.com/b1a03a86ac.js" crossorigin="anonymous"></script>
+    <header class="header" >
+        <div class="logo-header" >
+            <img src="img\logo 34253.png" alt="">
+        </div>
+        <input type="checkbox" id="toggle-menu">
+        <label class="menu-hamburguesa" for="toggle-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <nav class="barra-navegacion">
+            <ul class="ul-nav" >
+                <li class="li-nav" ><a class="link-nav" id="guia-nav" href="#">Menú</a></li>
+                <li class="li-nav" ><a class="link-nav" href="#">Noticias</a></li>
+                <li class="li-nav" ><a class="link-nav" href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <div class="hola">
+            <h1>Bienvenido a Universal News</h1>
+            <p>Somos un medio independiente dedicado a entregarte noticias relevantes y transparentes. Aquí encuentras análisis profundos, datos confiables y una visión equilibrada del mundo actual.</p>
+        </div>
+        <div class="ctn-items">
+            <div class="titulo-articulos">
+                <h1>Ultimas noticias</h1>
+            </div>
+            <article class="item">
+                <img src="img\gato.jpg" alt="">
+                <div class="info-item">
+                    <h2>Titulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a voluptates eos doloribus amet voluptas nam non exercitationem dicta, consectetur ipsa vel repellat praesentium animi ea est similique inventore nostrum!</p>
+                    <div class="fecha-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Hace 2 horas</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="item">
+                <img src="img\gato.jpg" alt="">
+                <div class="info-item">
+                    <h2>Titulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a voluptates eos doloribus amet voluptas nam non exercitationem dicta, consectetur ipsa vel repellat praesentium animi ea est similique inventore nostrum!</p>
+                    <div class="fecha-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Hace 2 horas</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="item">
+                <img src="img\gato.jpg" alt="">
+                <div class="info-item">
+                    <h2>Titulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a voluptates eos doloribus amet voluptas nam non exercitationem dicta, consectetur ipsa vel repellat praesentium animi ea est similique inventore nostrum!</p>
+                    <div class="fecha-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Hace 2 horas</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="item">
+                <img src="img\gato.jpg" alt="">
+                <div class="info-item">
+                    <h2>Titulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a voluptates eos doloribus amet voluptas nam non exercitationem dicta, consectetur ipsa vel repellat praesentium animi ea est similique inventore nostrum!</p>
+                    <div class="fecha-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Hace 2 horas</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="empresa-footer">
+            <div class="div-footer" id="footer-inicio">
+                <h3>Universal News</h3>
+                <p>Tu fuente confiable de información actualizada las 24 horas del día</p>
+            </div>
+            <div class="div-footer">
+                <h3>Secciones</h3>
+                <div class="ctn-links-footer">
+                    <a href="#">Tecnología</a>
+                    <a href="#">Economía</a>
+                    <a href="#">Deportes</a>
+                    <a href="https://call-of-duty-electro.netlify.app/">Política</a>
+                </div>
+            </div>
+            <div class="div-footer">
+                <h3>Acerca de</h3>
+                <div class="ctn-links-footer">
+                    <a href="#">Nosotros</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Publicidad</a>
+                </div>
+            </div>
+            <div class="div-footer">
+                <h3>Legal</h3>
+                <div class="ctn-links-footer">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+        <div class="div-footer" id="cierre-footer">
+            <p>&copy; 2025 Universal News  -  Creado por Matias Galaz</p>
+        </div>
+    </footer>
 </body>
 </html>
