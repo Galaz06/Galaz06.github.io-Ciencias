@@ -128,7 +128,7 @@ main {
 .titulo-articulos {
     position: absolute;
     top: 2rem;
-    left: 3rem;
+    margin-left: 3vw;
     color: var(--Background3);
     font-size: 2.8rem;
 }
@@ -378,6 +378,10 @@ footer {
 
     .item img {
         height: 60%;
+    }
+
+    .titulo-articulos {
+        padding-left: 3rem;
     }
 }
 
